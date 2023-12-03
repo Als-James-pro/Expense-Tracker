@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    tools:context=".AboutUs"
+    android:background="@color/white"
+    android:backgroundTint="#111212"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_activity"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/r1">
+        <include layout="@layout/main_toolbar"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/aboutus"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+         android:textAlignment="center"
+            android:text="@string/about_us"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_labels"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="30dp"
+            android:layout_below="@+id/aboutus"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/txt1"
+                    android:textStyle="bold"
+                    android:textColor="#101010"
+                    android:paddingTop="7dp"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Welcome to our Expense Manager App!"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"
+                    android:paddingTop="10sp"
+                    android:layout_gravity="center"
+                    android:textColor="#101010"
+                    android:paddingLeft="5dp"
+                    android:textSize="20sp"
+                    android:text="We understand that managing personal finances can be a challenging task, and that's why we've developed this powerful tool to simplify your financial journey. Our Expense Manager App is designed to help you effortlessly calculate and track your daily expenses and income, ensuring that you stay on top of your financial goals."/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"
+                    android:paddingTop="10sp"
+                    android:layout_gravity="center"
+                    android:textColor="#101010"
+                    android:paddingLeft="5dp"
+                    android:textSize="20sp"
+                    android:text="At its core, our app is built on the belief that understanding your spending patterns is crucial for effective financial planning. By providing you with an intuitive and user-friendly platform, we aim to empower you to take control of your finances and make informed decisions about your money."/>
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:layout_gravity="start">
+        <include layout="@layout/main_navigation_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

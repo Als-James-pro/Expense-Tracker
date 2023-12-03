@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#939292"
+    android:layout_height="match_parent"
+    android:layout_width="280dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="120dp"
+        android:layout_width="120dp"
+        android:src="@drawable/expense2"
+        android:onClick="ClickLogo"
+        android:layout_gravity="center"
+        android:layout_margin="17dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="@string/expense_manager"/>
+
+    <View
+        android:background="@color/black"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="16dp"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#FF9800"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="Clickhome"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/home"
+            android:layout_marginStart="16dp"
+            android:padding="12dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/baseline_home_24"
+            android:layout_marginEnd="50dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#FF9800"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="clickLanguage"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/language"
+            android:layout_marginStart="16dp"
+            android:padding="12dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/baseline_language_24"
+            android:layout_marginEnd="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#FF9800"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="clickAboutUs"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/about_uss"
+            android:layout_marginStart="17dp"
+            android:padding="12dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/baseline_warehouse_24"
+            android:layout_marginEnd="50dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#FF9800"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="clickSettings"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/settings"
+            android:layout_marginStart="17dp"
+            android:padding="12dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/baseline_settings_24"
+            android:layout_marginEnd="50dp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:background="@color/black"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/navimg2"/>
+    </LinearLayout>
+
+</LinearLayout>

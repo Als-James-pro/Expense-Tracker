@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebkgs"
+    android:orientation="vertical"
+    tools:context=".AddTransactionActivity">
+    <RelativeLayout
+        android:id="@+id/add_transaction"
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Customer"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/customNameTV"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:hint="Customer Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/edit_text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/amoutTV"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Amount"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+    <Button
+        android:id="@+id/btn_add_transaction"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_customer"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

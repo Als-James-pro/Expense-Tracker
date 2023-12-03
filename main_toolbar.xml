@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:layout_gravity="center_vertical"
+    android:padding="12dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/baseline_menu_24"
+        android:onClick="ClickMenu"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textAlignment="center"
+        android:textColor="#FAF7F7"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Expense Manager"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/baseline_more_vert_24"/>
+
+</LinearLayout>
